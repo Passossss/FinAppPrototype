@@ -10,9 +10,5 @@
 
   Run `bun install` to install the dependencies.
 
-<<<<<<< HEAD
   Run `bun start` to start the development server.
-=======
-  Run `npm run dev` to start the development server.
->>>>>>> 8824f049d4677e36afebc287d30bf26aae931024
   
