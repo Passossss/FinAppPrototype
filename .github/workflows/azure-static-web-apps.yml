@@ -26,8 +26,8 @@ jobs:
           action: "upload"
           app_location: "/"
           output_location: "dist"
-          # ensure devDependencies are installed and use npx to invoke vite (avoids permission denied on bin)
-          app_build_command: "npm ci --include=dev && npx vite build"
+          # ensure devDependencies are installed and run the build script
+          app_build_command: "npm ci && npm run build"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
