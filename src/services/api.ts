@@ -1,6 +1,6 @@
 import axios, { AxiosError } from 'axios';
 
-const API_BASE_URL = (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_API_URL) || 'https://finn-fubrgbe0bmcrhff5.eastus-01.azurewebsites.net/api';
+const API_BASE_URL = (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_API_URL) || 'http://localhost:3000/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
